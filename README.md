@@ -1,18 +1,16 @@
 # MUST Campus Academic Resource Sharing Platform
 
-> 校园学术资源共享平台 — 真实部署的全栈系统  
+> 校园学术资源共享平台 — 课程全栈系统（曾部署，当前演示已下线）  
 > System Analysis and Design · Group F · Spring 2026  
 > School of Business · Macau University of Science and Technology
 
 ---
 
-## 🌐 Live System
+## 🌐 Deployment Status
 
-| | |
-|---|---|
-| **Production URL** | https://signing-isle-printed-shapes.trycloudflare.com |
-| **Demo Account** | Student ID `1230000000` · Password `demo123` |
-| **API Docs** | https://signing-isle-printed-shapes.trycloudflare.com/docs |
+The VPS demo has been taken offline. The previous demo URL and hosted API documentation are no longer available. Source code and local setup instructions remain in this repository.
+
+VPS 演示已下线，原演示地址及在线 API 文档已停止提供；源码与本地运行说明仍保留在本仓库。
 
 ---
 
@@ -56,7 +54,7 @@ A new feature not present on any existing campus resource platform.
 │
 ├── Prototype.html                 # Interactive front-end (single-file, calls real API)
 │
-├── backend/                       # FastAPI backend deployed on VPS
+├── backend/                       # FastAPI backend (previously deployed on VPS)
 │   ├── app/                         # Application source code
 │   │   ├── main.py                    # FastAPI entry point
 │   │   ├── config.py                  # Configuration (constants, weights)
@@ -109,7 +107,7 @@ A new feature not present on any existing campus resource platform.
 | Database | MariaDB 10 (MySQL-compatible, schema.sql) |
 | Authentication | JWT (`python-jose`) + bcrypt |
 | Deployment | Docker Compose + nginx + Cloudflare Tunnel |
-| Hosting | 1 GB RAM VPS · AlmaLinux 9 · 24/7 online |
+| Previous hosting | 1 GB RAM VPS · AlmaLinux 9 · demo taken offline |
 
 ---
 
@@ -141,9 +139,9 @@ For full Docker / VPS deployment, see [`backend/README.md`](backend/README.md).
 
 ---
 
-## 📊 Performance (production VPS)
+## 📊 Performance (previous VPS deployment)
 
-Validated under real load testing on the deployed system:
+Previously reported load-test results for the VPS deployment:
 
 | Metric | Result |
 |---|---|
@@ -166,4 +164,4 @@ This repo serves as project management evidence per the BBAZ16604 requirement to
 
 ## 📝 License
 
-Academic project for educational purposes. Course materials referenced in the deployed system (lecture slides, textbook excerpts) belong to their original copyright holders and are not included in this repository.
+Academic project for educational purposes. Course materials referenced in the project (lecture slides, textbook excerpts) belong to their original copyright holders and are not included in this repository.
