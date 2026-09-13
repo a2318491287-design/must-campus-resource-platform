@@ -18,7 +18,7 @@
 
 ## 👥 Team
 
-- 连宇翔 (1230020693) — Project Lead, Backend, Deployment
+- 连宇翔 (1230020693) — Project Lead, System Architecture, Database, Backend, Deployment
 - 郁凯杰 (1230020426) — System Architecture, Database
 - 陈瀚中 (1230032209) — Frontend, Prototype, UI
 
